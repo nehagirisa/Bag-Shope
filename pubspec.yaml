@@ -30,6 +30,7 @@ dependencies:
   
   flutter_svg: ^0.22.0
   cupertino_icons: ^1.0.3
+  velocity_x: ^3.3.0
 
   
 

@@ -6,12 +6,15 @@ import 'package:store_app/component/couter_favbutton.dart';
 import 'package:store_app/component/descrription.dart';
 
 import 'package:store_app/component/product_title.dart';
+
 import 'package:store_app/material/product.dart';
 
 class BodyDetail extends StatelessWidget {
   final Product product;
 
   const BodyDetail({Key key, this.product}) : super(key: key);
+
+  // const BodyDetail({Key key, this.item, Product product}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -35,21 +38,13 @@ class BodyDetail extends StatelessWidget {
                           topRight: Radius.circular(20))),
                   child: Column(children: [
                     ColorAndSize(product: product),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    Description(product: product),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    CounterWithFavbutton(),
-                    SizedBox(
-                      height: 5,
-                    ),
-                    AddToCart(product: product),
-                    SizedBox(
-                      height: 5
-                    ),
+                      SizedBox(height: 5),
+                      Description(product: product),
+                      SizedBox(height: 5),
+                      CounterWithFavbutton(),
+                      SizedBox(height: 5),
+                      AddToCart(product: product)
+                   
                   ])),
               ProductTitleWithImage(
                 product: product,
